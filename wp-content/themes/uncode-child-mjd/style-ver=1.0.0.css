@@ -1,0 +1,136 @@
+/*
+Theme Name: Uncode Child MJD
+Description: Child theme for Uncode theme (MJD)
+Author: Undsgn™
+Author URI: http://www.undsgn.com
+Template: uncode
+Version: 1.0.0
+Text Domain: uncode
+*/
+@font-face {
+  font-family: 'Gotham-Medium';
+  src:  url('gotham/GothamSSm-Medium-.eot#iefix') format('embedded-opentype'),
+    url('gotham/GothamSSm-Medium.otf')  format('opentype'),
+    url('gotham/GothamSSm-Medium.woff') format('woff'),
+    url('gotham/GothamSSm-Medium.ttf')  format('truetype'),
+    url('gotham/GothamSSm-Medium.svg#GothamSSm-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Hubspot button style override */
+
+.hs-cta-wrapper .cta_button {
+    -webkit-transition: color 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86), background-color 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86), border-color 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86) !important;
+    -moz-transition: color 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86), background-color 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86), border-color 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86) !important;
+    -o-transition: color 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86), background-color 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86), border-color 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86) !important;
+    transition: color 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86), background-color 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86), border-color 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86) !important;
+    border-width: 1px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff !important;
+    background-color: #00beff !important;
+    border-color: #00beff !important;
+    display: inline-block !important;
+    font-size: 12px !important;
+    padding: 13px 31px 13px 31px !important;
+    font-style: normal !important;
+    text-align: center !important;
+    vertical-align: middle;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    cursor: pointer !important;
+    background-image: none !important;
+    border-style: solid;
+    border-radius: 2px !important;
+    outline: none;
+    white-space: pre-wrap;
+    -webkit-text-stroke: 0px;
+    font-family: Montserrat !important;
+}
+
+.hs-cta-wrapper .cta_button:hover,
+.hs-cta-wrapper .cta_button:focus,
+.hs-cta-wrapper .cta_button:active {
+    color: #00beff !important;
+    background-color: #0000 !important;
+    border-color: #00beff !important;
+}
+
+.hs-cta-wrapper .cta_button::before {
+    content: "\f063";
+    font-family: uncodeicon!important;
+    speak: none;
+    font-size: 12px !important;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 9px;
+}
+
+/* hubspot form style override */
+
+.hbspt-form .hs-form-field {
+    float: left;
+    width: 50%;
+}
+
+.hbspt-form .hs-form-field:nth-child(odd) {
+    padding-right: 9px;
+}
+
+.hbspt-form .hs-form-field:nth-child(even) {
+    padding-left: 9px;
+}
+
+.hbspt-form input {
+    margin-top: 18px;
+}
+
+@media (max-width: 959px) {
+    .hbspt-form input[type="submit"] {
+        margin-top: 18px;
+    }
+}
+
+.hbspt-form .hs-form-field .hs-form-required {
+    display: none;
+}
+
+.hbspt-form .hs-form-field .input input {
+    width: 100%;
+}
+
+.hbspt-form input.hs-button {
+    background-color: #00beff;
+    border: 1px solid #00beff;
+    color: #fff;
+    font-family: Montserrat !important;
+    width: 100%;
+}
+
+.hbspt-form input.hs-button:hover,
+.hbspt-form input.hs-button:focus,
+.hbspt-form input.hs-button:active {
+    background-color: #0000;
+    color: #00beff;
+}
+
+.contactFormWrapper .hbspt-form .hs-form-field {
+    float: none;
+    width: 100%;
+}
+
+
+.contactFormWrapper .hbspt-form .hs-form-field:nth-child(odd) {
+    padding-right: 0;
+}
+
+.contactFormWrapper .hbspt-form .hs-form-field:nth-child(even) {
+    padding-left: 0;
+}

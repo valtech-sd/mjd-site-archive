@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Engineering &amp; Emerging Tech &#8211; MJD Interactive</title>
+	<atom:link href="https://www.mjdinteractive.com/insights/category/engineering/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.mjdinteractive.com</link>
+	<description>Digital Innovation Agency</description>
+	<lastBuildDate>Fri, 24 Jul 2020 17:32:32 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+
+<image>
+	<url>https://www.mjdinteractive.com/wp-content/uploads/2018/02/cropped-favicon-32x32.png</url>
+	<title>Engineering &amp; Emerging Tech &#8211; MJD Interactive</title>
+	<link>https://www.mjdinteractive.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Picking a Continuous Integration Platform</title>
+		<link>https://www.mjdinteractive.com/insights/picking-a-continuous-integration-platform-for-mobile-projects/</link>
+		<comments>https://www.mjdinteractive.com/insights/picking-a-continuous-integration-platform-for-mobile-projects/#respond</comments>
+		<pubDate>Tue, 23 Feb 2016 18:15:06 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Engineering & Emerging Tech]]></category>
+
+		<guid isPermaLink="false">https://www.mjdinteractive.com/?p=76074</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.mjdinteractive.com/insights/picking-a-continuous-integration-platform-for-mobile-projects/">Picking a Continuous Integration Platform</a> appeared first on <a rel="nofollow" href="https://www.mjdinteractive.com">MJD Interactive</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<div data-parent="true" class="vc_row limit-width row-container"><div class="row single-top-padding one-bottom-padding single-h-padding row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light font-134980"  ><div class="uncoltable"><div class="uncell"><div class="uncont no-block-padding col-custom-width" style="max-width:804px;"><div class="heading-text el-text" ><h2 class="h2" ><span></p></span><span><div class="post-meta"></span><span><h2>Picking a Continuous Integration Platform</h2></span><span></div></span><span><p></span></h2><hr class="separator-break separator-accent" /><div><p>Cameron Perry</p>
+</div></div><div class="clear"></div><div class="uncode_text_column text-lead" ></p>
+<div class="post-intro">
+<div class="post-intro">
+<p>In practical terms, continuous integration, or CI, is the process of taking completed code (feature, bug fix, or otherwise) and integrating them into the main repository on a regular basis.</p>
+</div>
+</div>
+<p>
+</div></div></div></div></div></div><script id="script-204140" data-row="script-204140" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-204140"));</script></div></div></div><div data-parent="true" class="vc_row limit-width row-container"><div class="row single-top-padding one-bottom-padding single-h-padding row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light font-134980"  ><div class="uncoltable"><div class="uncell"><div class="uncont no-block-padding col-custom-width" style="max-width:804px;"><div class="uncode_text_column text-lead" ><p>The concept isn’t foreign to most experienced developers &#8211; once a feature is completed, the code is pushed back into the repository &#8211; either the main development branch, or a feature branch. The next step involves work that many haven’t experienced. Upon integrating/merging the code into the repository, a build server pulls the changes and builds the project, testing it for functionality, often through unit tests. Depending on the project, the process of building or compiling on the server may also identify newly introduced issues not otherwise noticed by the developer (in theory testing “works on my machine” syndrome).</p>
+<p><span style="font-weight: 400;">This process allows teams to quickly identify problems that might otherwise go unnoticed for some amount of time. Quickly identifying issues means they can be resolved before a system of dependencies become built around them &#8211; something that becomes much more difficult to unwind as more code is added.</span></p>
+<p><span style="font-weight: 400;">Because CI is often coupled with proper unit and functional testing, the build server is able to verify that the tested functionality hasn’t changed since the last successful integration. Furthermore, CI can be used to test code in numerous build and runtime environments. Some practical examples could include testing builds against various system libraries and configurations, an array of browsers and versions, or a suite of test phones and tablets spanning sizes and operating systems. Here the developer makes large efficiency gains as repetitive tasks are handled by the server.</span></p>
+<p><span style="font-weight: 400;">While investigating various CI services, the mobile team here at MJD consider several factors that influenced our final decision. Among them,</span></p>
+<h4><strong>Platform support</strong></h4>
+<p><span style="font-weight: 400;">We needed a system capable of building for both iOS and Android (implicitly, Mac OS X ).</span></p>
+<h4><strong>Ease of use</strong></h4>
+<p><span style="font-weight: 400;">Is it relatively easy to configure the system and keep it running with minimal intervention?</span></p>
+<h4><strong>Customization</strong></h4>
+<p><span style="font-weight: 400;">Can we customize the build process outside of modifying the application project files?</span></p>
+<h4><strong>Availability</strong></h4>
+<p><span style="font-weight: 400;">Some services are cloud-based, while others are self-hosted (possibly only available on the local network).</span></p>
+<h3><strong>Cost</strong></h3>
+<p><span style="font-weight: 400;">Depending on the company size, number of repositories, or concurrent builds, price may become prohibitive</span></p>
+<p><span style="font-weight: 400;">Based on this list we evaluated the following CI tools and services:</span></p>
+<ul>
+<li style="font-weight: 400;"><a href="http://jenkins-ci.org" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Jenkins (http://jenkins-ci.org/)</span></a></li>
+<li style="font-weight: 400;"><a href="https://circleci.com" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">CircleCI (https://circleci.com/)</span></a></li>
+<li style="font-weight: 400;"><a href="https://www.bitrise.io/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Bitrise (https://www.bitrise.io/)</span></a></li>
+<li style="font-weight: 400;"><a href="https://buddybuild.com/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Buddybuild (https://buddybuild.com/)</span></a></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">and many others along the way</span></li>
+</ul>
+<h3>Jenkins</h3>
+<p><span style="font-weight: 400;"><a href="http://jenkins-ci.org" target="_blank" rel="noopener noreferrer">Jenkins</a> is an open source CI server that has been one of the go-tos for a few years (more if you count its roots with Hudson). It finds favor in the development community because of its versatility and platform support (Mac, Windows, Linux, BSD). With myriad publicly-contributed plugins, Jenkins is quite customizable.</span></p>
+<p><span style="font-weight: 400;">Let’s see how it stacks up against our needs:</span></p>
+<h4><b>Platforms</b></h4>
+<p><span style="font-weight: 400;">As mentioned above, Jenkins runs on Mac OS X, Windows, Linux, and BSD. This meets our first requirement &#8211; Mac OS X.</span></p>
+<h4><b>Ease of Use</b></h4>
+<p><span style="font-weight: 400;">Once installed and with jobs successfully running, Jenkins is quite maintainable. Once running, it just keeps going. Coupled with tools like <a href="https://fastlane.tools" target="_blank" rel="noopener noreferrer">Fastlane</a>, (and soon Android) it makes the build process very easy to configure.</span></p>
+<p><span style="font-weight: 400;">There’s a caveat: Getting Jenkins running in the first place can be difficult. On Macs, at least for the purpose of building iOS projects, there are a few special steps that must be taken in order to allow Xcode to operate properly. Kunstmaan Labs has a good step-by-step guide to installing Jenkins and configuring <a href="https://labs.kunstmaan.be/blog/ios-continuous-delivery-with-jenkins-and-fastlane" target="_blank" rel="noopener noreferrer" class="broken_link">Fastlane</a>.</span></p>
+<p><span style="font-weight: 400;">Besides setup issues, one important factor is your team’s ability to maintain a server, should anything happen. Some developers may feel completely comfortable caring for a server, while others completely lost. This is an important factor to consider when deciding whether or not a self-hosted solution like Jenkins is right. Generally, our experience with Jenkins running on Macs has been positive, and we have enough expertise to handle administration should an issue arise.</span></p>
+<h4><b>Customization</b></h4>
+<p><span style="font-weight: 400;">Jenkins is one of the most customizable CI tools available &#8211; certainly more so than popular cloud-hosted tools. Out of the box, it provides a simple build template: Provide the repository’s URL, branch(es) to build, frequency the build should run, and a short shell script used to actually build the project. A number of plugins are available for both Xcode and Android projects to ease build configuration. Since we use Fastlane (https://fastlane.tools/), the command line is sufficient, but it doesn’t end there. If you need more functionality, Jenkins can do things like send status emails, create build reports, upload binaries for testing, perform specific unit and functional tests (including software simulators and actual hardware), post notifications, deploy to staging and production, and even turn on a Hue light.</span></p>
+<p><span style="font-weight: 400;">Some of these features are bundled with hosted CI services, but that’s where the extensibility ends with them. Because we value being able to tweak our build configurations and perform extra tasks, Jenkins gets a bit of extra credit while others fail miserably.</span></p>
+<h4><b>Availability</b></h4>
+<p><span style="font-weight: 400;">This is rather important &#8211; are you able to access the build machine when you need to? Self-hosting a Jenkins server could mean it sits behind a firewall, blocking your access while out of the office. The typical work-around involves port forwarding to the Jenkins server, or requiring the team to VPN into the network. Another less common option is leasing a Mac server in a datacenter such as MacMiniColo.net. Because we already have a spare Mac Mini in the office, that will be our Jenkins box, so the colocation idea is out. Deciding on </span><i><span style="font-weight: 400;">how</span></i><span style="font-weight: 400;"> to connect from the outside is yet to be determined.</span></p>
+<h4><b>Cost</b></h4>
+<p><span style="font-weight: 400;">Jenkins is free. When you look at the available features, you get a lot more than what many paid services offer. Don’t be fooled that the free price tag means it’s completely free. The hidden cost of maintenance, upgrades, and downtime are extremely important. Though Jenkins is easy to use once running, there are times when an engineer must spend time doing routine work, which comes at a cost of their time. Hosted services don’t incur these costs (or presumably, are baked into the monthly or per-user fees). Given a twelve-month timespan, it may be a wash.</span></p>
+<h4><b>Conclusion</b></h4>
+<p><span style="font-weight: 400;">As we’ve seen, Jenkins offers us many benefits and a few drawbacks. On one hand, we have a very powerful, extensible system. On the other, the burden of maintenance is on our team and potentially limited access is a concern.</span></p>
+<h3></h3>
+<p>
+</div></div></div></div></div></div><script id="script-486773" data-row="script-486773" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-486773"));</script></div></div></div><div data-parent="true" class="vc_row limit-width row-container"><div class="row single-top-padding one-bottom-padding single-h-padding row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light font-134980"  ><div class="uncoltable"><div class="uncell"><div class="uncont no-block-padding col-custom-width" style="max-width:804px;"><div class="uncode_text_column text-lead" ></p>
+<h3>CircleCI</h3>
+<p><span style="font-weight: 400;"><a href="https://circleci.com/" target="_blank" rel="noopener noreferrer">CircleCI</a> bills itself as an all-in-one build management, testing, and deployment solution for mobile and web. A quick overview of important points:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">You’ll have to decide if the pricing scheme is sustainable as your project/org scales.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">It is completely built around GitHub integration; there is no support for BitBucket, self-hosted Perforce, or anything else currently.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Build inference and configuration are not as smart as we had hoped.</span></li>
+</ul>
+<p><span style="font-weight: 400;">Let’s take a look at the feature breakdown.</span></p>
+<h4><b>Platforms</b></h4>
+<p><span style="font-weight: 400;">Supports web, Android and iOS. </span><span style="font-weight: 400;">That said, the support for mobile seems immature, especially for iOS as of this writing.</span></p>
+<h4><b>Ease of Use</b></h4>
+<p><span style="font-weight: 400;">We wanted to set it up to build a complete, extant project. In our line of business, a lot of what we do is taking over work on someone else’s codebase. We often don’t have the luxury or freedom to radically restructure an app or its build process and requirements. So to realistically test this kind of scenario, we decided to fork a project on GitHub.</span></p>
+<p><span style="font-weight: 400;">The process of setting up a project on CircleCI was actually very smooth and easy. It lets you pick any repo you have access to from your GitHub account, you hit the “Build project” button, and it imports everything and tries to detect reasonable build settings.</span></p>
+<p><span style="font-weight: 400;">First we tried </span><a href="https://github.com/zxing/zxing" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Zebra Crossing</span></a><span style="font-weight: 400;">, the famous barcode scanning software from Google. After a couple hours of fiddling, we decided to give up and try another project, so as not to waste too much time. Next we tried the </span><a href="https://github.com/duckduckgo/android" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">DuckDuckGo search</span></a><span style="font-weight: 400;"> app for Android. That ended up not working out either. Finally, we tried the </span><a href="https://github.com/google/iosched" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">2015 Google IO schedule</span></a><span style="font-weight: 400;"> app. This we ultimately got working, though we had to lean on a few hacks and workarounds that we wouldn’t feel comfortable leaving in production code.</span></p>
+<p><span style="font-weight: 400;">First, the unit tests for the server component were failing for some reason. Most likely it’s related to the fact that they’re running on a container, or a slight difference in some library. We were mostly interested in testing its ability to build a mobile app, so we just disabled those tests. Second, CircleCI’s build settings inference didn’t set it up so that the app was actually built. We had to create a circle.yml build config file in the repo, and add a manual </span><span style="font-weight: 400;">gradle</span><span style="font-weight: 400;"> command to actually generate the APK. Third, apparently Android builds under Gradle are a little cavalier with threads and memory, which was causing the process to be killed on the container. We found a </span><a href="http://stackoverflow.com/a/33432440/984602" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">StackOverflow answer</span></a><span style="font-weight: 400;"> dealing with this, and found that limiting the number of threads fixed the dying builds. Fourth, getting it to actually collect and link the build artifact was a little bit fiddly, and required us to spam a bunch of commits to our branch as we searched for the correct incantation in the circle.yml file. In the end we were unable to get it to move or rename the apk, so anyone looking to download it later would have to drill down through several layers of sub directories and manually rename the file to something other than “android-debug.apk”.</span></p>
+<h4><b>Customization</b></h4>
+<p><span style="font-weight: 400;">CircleCI is intimately tied to GitHub. You create an account by logging in with GitHub, and builds are all tied to your GitHub commits. If your workflow is built around GitHub, then this is all incredibly simple and convenient. It also supports an array of secondary technology and service integrations, to hook into your toolchain and workflow, including chat and email, analytics, and deployment services.</span></p>
+<p><span style="font-weight: 400;">CircleCI analyzes your code and project config files, and tries to figure out how to make it all just work for you, automagically. They also offer you fairly comprehensive manual configuration options: there is a way to enter custom, private, encrypted environment variables which will be available to the build scripts; there is a simple webform where you can enter manual commands for different build steps; and there is a highly customizable YML file you can include in the root of your repo to override and specify almost any aspect of the build apparatus. Builds can be customized based on regex matching against your git tags.</span></p>
+<p><span style="font-weight: 400;">If you have the requisite configuration files set up correctly in your repo, it will automatically download build dependencies for many of the most common systems package/dependency management systems:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">CocoaPods</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Homebrew</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Ruby Gems</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Maven</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Android SDK/tools</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">…and others.</span></li>
+</ul>
+<p><span style="font-weight: 400;">CircleCI will run any tests it detects (or that you specify) for each build. Because you are sequestered in your own lightweight container, you can install any libraries or software you need. If any test fails, it considers this a failed build, and will notify you of your stupidity. Beyond standard unit tests, CircleCI supports integration with </span><i><span style="font-weight: 400;">e.g.</span></i><span style="font-weight: 400;"> Appium to do UI testing.</span></p>
+<h4><b>Cost</b></h4>
+<p><span style="font-weight: 400;">CircleCI is based on the idea of containers, which are basically lightweight Ubuntu GNU/Linux (or OSX) virtual machines. Builds can be parallelized across containers, allowing multiple simultaneous builds, or a single build conducted in parallel, or some compromise of the two. For example, with four containers, you can do four simultaneous builds, we build split across four containers, or two simultaneous builds, each split across two containers.</span></p>
+<p><span style="font-weight: 400;">Each time you push code to one of the github repos you’ve added to your CircleCI account, a build is triggered. So if you or your team push multiple commits in quick succession, builds will be queued up when you run out of available containers. With the basic service, which allows you to have unlimited users and projects/repositories, you get a single container for free. Additional containers are $50 per month.</span></p>
+<p><span style="font-weight: 400;">If you’re an individual or on a small team, and your builds are fairly quick, this is probably very reasonable. As your needs scale up, this could start getting expensive quickly, but this may be offset by the larger engineering and devops budgets typical of larger organizations. You’ll have to decide where that sweet spot is for you, and assess accordingly.</span></p>
+<h3><b>Conclusion</b></h3>
+<p><span style="font-weight: 400;">We’re sure a lot of our difficulties are due to ignorance on our part; with the knowledge we gained getting the iosched project working, we could probably go back and get zxing and dukgo working. On the other hand, we were hoping CircleCI’s build settings inference technology would have been a little smarter. CircleCI really feels like it’s got a lot of potential, but it’s maybe a bit young. Or at least that’s true of the mobile development experience. We, of course, didn’t put it through its paces, but the support for web deployment and CI seems much more mature and complete.</span></p>
+<p><span style="font-weight: 400;">In the end, the fact that it’s so intimately tied to GitHub probably means we won’t go with CircleCI. Not that there’s anything wrong with GitHub (it’s our preference, in general). But even if we decided to move all our current repositories over from BitBucket, what do we do when we inherit a large code base from a customer that lives on their internal SVN servers? Migration and interop between git and SVN is not the strong suit of everyone on our team, and for a small company that doesn’t have a dedicated build engineer or devops, the overhead and headache of trying to make it work seems prohibitive right now.</span></p>
+</div></div></div></div></div></div><script id="script-154134" data-row="script-154134" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-154134"));</script></div></div></div><div data-parent="true" class="vc_row limit-width row-container"><div class="row single-top-padding one-bottom-padding single-h-padding row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light font-134980"  ><div class="uncoltable"><div class="uncell"><div class="uncont no-block-padding col-custom-width" style="max-width:804px;"><div class="uncode_text_column text-lead" ></p>
+<h3>Bitrise</h3>
+<h4>Overview</h4>
+<p><span style="font-weight: 400;"><a href="https://www.bitrise.io/" target="_blank" rel="noopener noreferrer">Bitrise</a> prides itself as a “mobile continuous integration and delivery service for your whole team, with dozens of integrations for your favorite services”. Their goal is to allow users to craft powerful workflows for every development stage including testing, deployment, signing, packaging and delivery.</span></p>
+<h4>Platforms</h4>
+<p><span style="font-weight: 400;">Bitrise has support for iOS, Android, and Xamarin builds. There is a web portal with a UI that allows you to manage your workflows in a visual manner. There are also command line tools that let you accomplish the same tasks. The tools for the iOS build seem to be fairly mature; however, the Android environments are in Beta release at the moment.</span></p>
+<h4>Ease of Use</h4>
+<p><span style="font-weight: 400;">Bitrise provides out of the box integration with Github and Bitbucket. It takes about 15 minutes to get up and running once you select the repository and branch, set up the SSH keys, and project build configuration. We were able to get the iOS project we built for the Grammys up and running fairly quickly. However, there were some build errors on the Grammys Android project that had to do with the Gradle specific permissions. We contacted their support team, but were unable to get these issues resolved so we did not get a working Android build with Bitrise.</span></p>
+<h4>Customization</h4>
+<p><span style="font-weight: 400;">The platform offers all sorts of different integrations which are really useful including:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Fastlane</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Slack notifications</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Deployment to iTunes and Google Play</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Fabric/Crashlytics deployer</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Unit Testing services</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Scripting support</span></li>
+</ul>
+<h4>Availability</h4>
+<p><span style="font-weight: 400;">The entire service resides in the cloud and is accessible from any browser or command line.</span></p>
+<h4>Cost</h4>
+<p><span style="font-weight: 400;">There are three different tiers for the product:</span></p>
+<h4><strong>Voyager &#8211; Free</strong></h4>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">2 team members</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">200 builds / month</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">1 concurrent build</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">10 min build duration</span></li>
+</ul>
+<p><strong>Galileo &#8211; $29 per month</strong></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">5 team members</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Unlimited builds</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">1 concurrent build</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">30 min build duration</span></li>
+</ul>
+<p><strong>Atlantis &#8211; $129 per month</strong></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">15 team members</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Unlimited builds</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">2 concurrent builds</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">45 min build duration</span></li>
+</ul>
+<h4>Conclusion</h4>
+<p><span style="font-weight: 400;">While it appears Bitrise has a promising future in the continuous integration and delivery market, the current product is lacking and therefore not a good candidate for our purposes.</span></p>
+<h3>Buddybuild</h3>
+<p><span style="font-weight: 400;"><a href="https://buddybuild.com/" target="_blank" rel="noopener noreferrer">Buddybuild</a> is a cloud-hosted CI for both iOS and Android platforms. Though it’s a relative newcomer to the game, Buddybuild has started off strong &#8211; offering a number of features and third party integrations developers are bound to find useful.</span></p>
+<h4>Platforms</h4>
+<p><span style="font-weight: 400;">Buddybuild supports only Android and iOS projects, but keep in mind this also includes React Native, PhoneGap, and Ionic development frameworks. The service also supports common dependencies such as CocoaPods, Carthage, Maven, and npm.</span></p>
+<h4>Ease of Use</h4>
+<p><span style="font-weight: 400;">Configuring Buddybuild is relatively straightforward &#8211; provide a git repository URL, perform a few configurations as needed, invite testers, sync provisioning profiles (iOS), and be on your way. Whenever a new commit is pushed to the repository, Buddybuild will kick off a new integration build and send the results to your testers. Of particular interest to iOS developers is Buddybuild’s ability to automatically manage devices and provisioning profiles. Their web interface is easy to understand and works well.</span></p>
+<h4>Customization</h4>
+<p><span style="font-weight: 400;">Buddybuild offers a significant number of configurations to support building a variety of project configurations. Out of the box, Buddybuild offers build notifications (email, Slack, and HipChat), unit testing, environment variables, and binary versioning. Among iOS project customizations, you are able to select a version of Xcode (including betas), build scheme &amp; configuration, and signing identities.</span></p>
+<p><span style="font-weight: 400;">While those features are great, they are limiting if your needs fall outside a basic build and deploy strategy. Because Buddybuild is running integrations on their servers, your access to the system is limited. You don’t have access to installing specialized software tools, building for other platforms, running custom shell scripts, or interacting with unsupported third party integrations. Depending on your project’s needs, this could be a dealbreaker.</span></p>
+<h4>Availability</h4>
+<p><span style="font-weight: 400;">Buddybuild is available anywhere you have an internet connection.</span></p>
+<h4>Cost</h4>
+<p><span style="font-weight: 400;">At the time of this writing, Buddybuild is free, but the service is expected to be paid.</span></p>
+<h4>Conclusion</h4>
+<p><span style="font-weight: 400;">Buddybuild makes continuous integration and deployment a breeze for iOS and Android developers. It offers enough customization to be useful where it matters &#8211; notifications, builds, testing, and binary distribution. Where it lacks is the ability to do anything outside of typical mobile build cycle. While this is to be expected with hosted solutions, it’s not the choice for every team.</span><span style="font-weight: 400;"></span></p>
+<h3>And the Winner Is&#8230;</h3>
+<p><span style="font-weight: 400;">We’ve had the opportunity to take a look at a variety of CI options. While hosted CI solutions offer tremendous ease of use, yet lack customizability. On the other hand, powerful tools such as Jenkins offer immense flexibility, but aren’t always easy to use or administer. The route that is best for your team will depend on the tradeoffs you’re willing to take. If you’re looking for something that requires the least amount of configuration and administration, Buddybuild is the clear winner. If you need flexibility and advanced control such as running Fastlane or shell scripts during the build process, Jenkins is the tool for the job.</span></p>
+<p><span style="font-weight: 400;">The decision wasn’t easy, but ultimately we chose Buddybuild. We appreciate how easy it is to set up new projects and invite new testers. Our CI build needs are not complex and Buddybuild gets the job done with the least amount of work and maintenance. It just works. While we strongly considered Jenkins, we decided the power it offers isn’t required, nor are we interested in administering our own build server. We’re not ruling it out entirely should our needs change.</span></p>
+<h3>How Can MJD Help You?</h3>
+<p>Our clients ask us to make sense of every new digital revolution, and we deliver. We only have specialties and they include guiding strategy, designing, and building digital platforms, products and experiences that move the needle. Need help? <a href="/contact-us/">Get in touch, we&#8217;d love to chat.</a></p>
+<h4>Interested in more content like this? We publish everything on LinkedIn, all you have to do is follow us by clicking below!</h4>
+<p><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script><br />
+<script type="IN/FollowCompany" data-id="368750" data-counter="right"></script></p>
+</div></div></div></div></div></div><script id="script-636257" data-row="script-636257" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-636257"));</script></div></div></div><div data-parent="true" class="vc_row row-container"><div class="row limit-width row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light"  ><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div class="divider-wrapper " >
+    <hr class="border-color-lxmt-color separator-no-padding"  />
+</div>
+</div></div></div></div></div><script id="script-431566" data-row="script-431566" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-431566"));</script></div></div></div><div data-parent="true" class="vc_row limit-width row-container"><div class="row row-parent"><div class="row-inner"><div class="pos-top pos-center align_center column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light"  ><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div class="heading-text el-text" ><h2 class="h2" ><span></p></span><span><p style="text-align: center;"><strong>Check out the entire Evolution of Retail series:</strong></p></span><span><p></span></h2></div><div class="clear"></div><div class="owl-carousel-wrapper">
+            <div class="owl-carousel-container owl-carousel-loading double-gutter carousel-inner-padding">
+      <div id="index-115545" class="owl-carousel owl-element owl-height-equal owl-dots-outside" data-fade="true" data-loop="true" data-dots="true" data-navmobile="false" data-navspeed="400" data-autoplay="false" data-stagepadding="0" data-lg="3" data-md="3" data-sm="1" data-vp-height="false">
+        <div class="tmb tmb-carousel tmb-iso-h33 tmb-light tmb-text-showed tmb-overlay-showed tmb-overlay-bottom tmb-overlay-text-left tmb-overlay-text-mobile-center tmb-text-space-reduced tmb-image-anim  grid-cat-17 tmb-id-75947 tmb-img-ratio tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+						<div class="t-inside" ><div class="t-entry-visual" tabindex="0"><div class="t-entry-visual-tc"><div class="t-entry-visual-cont"><div class="dummy" style="padding-top: 66.7%;"></div><a tabindex="-1" href="https://www.mjdinteractive.com/insights/what-was-big-at-the-nrf-big-show/" class="pushed" target="_self" data-lb-index="0"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-accent-bg" style="opacity: 0.5;"></div></div>
+									<div class="t-overlay-wrap">
+										<div class="t-overlay-inner">
+											<div class="t-overlay-content">
+												<div class="t-overlay-text half-block-padding"><div class="t-entry"><h3 class="t-entry-title h6">What Was Big at the NRF Big Show</h3><hr class="separator-reduced" /><p class="t-entry-comments entry-small"><span class="extras"><span class="uncode-dot-irecommendthis"><span class="extras-wrap"><i class="fa fa-heart3"></i><span><span class="likes-counter">0</span> Like</span></span></span><span class="extras-wrap"><i class="fa fa-speech-bubble"></i><span>0 Comments</span></span><span class="extras-wrap"><i class="fa fa-watch"></i><span>8 Minutes</span></span></span></p></div></div></div></div></div><img src="https://www.mjdinteractive.com/wp-content/uploads/2018/05/NRF-mainhall-uai-750x500.jpg" width="750" height="500" alt="" /></a></div>
+				</div>
+			</div></div>
+					</div><div class="tmb tmb-carousel tmb-iso-h33 tmb-light tmb-text-showed tmb-overlay-showed tmb-overlay-bottom tmb-overlay-text-left tmb-overlay-text-mobile-center tmb-text-space-reduced tmb-image-anim  grid-cat-17 tmb-id-75686 tmb-img-ratio tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+						<div class="t-inside" ><div class="t-entry-visual" tabindex="0"><div class="t-entry-visual-tc"><div class="t-entry-visual-cont"><div class="dummy" style="padding-top: 66.7%;"></div><a tabindex="-1" href="https://www.mjdinteractive.com/insights/evolution-retail-pt-4-customer-expectations/" class="pushed" target="_self" data-lb-index="1"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-accent-bg" style="opacity: 0.5;"></div></div>
+									<div class="t-overlay-wrap">
+										<div class="t-overlay-inner">
+											<div class="t-overlay-content">
+												<div class="t-overlay-text half-block-padding"><div class="t-entry"><h3 class="t-entry-title h6">The Evolution of Retail, Pt. 4: Customer Expectations</h3><hr class="separator-reduced" /><p class="t-entry-comments entry-small"><span class="extras"><span class="uncode-dot-irecommendthis"><span class="extras-wrap"><i class="fa fa-heart3"></i><span><span class="likes-counter">0</span> Like</span></span></span><span class="extras-wrap"><i class="fa fa-speech-bubble"></i><span>0 Comments</span></span><span class="extras-wrap"><i class="fa fa-watch"></i><span>7 Minutes</span></span></span></p></div></div></div></div></div><img src="https://www.mjdinteractive.com/wp-content/uploads/2018/04/shutterstock_481755250-uai-2013x1342.jpg" width="2013" height="1342" alt="" /></a></div>
+				</div>
+			</div></div>
+					</div><div class="tmb tmb-carousel tmb-iso-h33 tmb-light tmb-text-showed tmb-overlay-showed tmb-overlay-bottom tmb-overlay-text-left tmb-overlay-text-mobile-center tmb-text-space-reduced tmb-image-anim  grid-cat-17 tmb-id-75693 tmb-img-ratio tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+						<div class="t-inside" ><div class="t-entry-visual" tabindex="0"><div class="t-entry-visual-tc"><div class="t-entry-visual-cont"><div class="dummy" style="padding-top: 66.6%;"></div><a tabindex="-1" href="https://www.mjdinteractive.com/insights/evolution-retail-pt-3-enhancing-customer-journey/" class="pushed" target="_self" data-lb-index="2"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-accent-bg" style="opacity: 0.5;"></div></div>
+									<div class="t-overlay-wrap">
+										<div class="t-overlay-inner">
+											<div class="t-overlay-content">
+												<div class="t-overlay-text half-block-padding"><div class="t-entry"><h3 class="t-entry-title h6">The Evolution of Retail, Pt. 3: Enhancing the Customer Journey</h3><hr class="separator-reduced" /><p class="t-entry-comments entry-small"><span class="extras"><span class="uncode-dot-irecommendthis"><span class="extras-wrap"><i class="fa fa-heart3"></i><span><span class="likes-counter">0</span> Like</span></span></span><span class="extras-wrap"><i class="fa fa-speech-bubble"></i><span>0 Comments</span></span><span class="extras-wrap"><i class="fa fa-watch"></i><span>13 Minutes</span></span></span></p></div></div></div></div></div><img src="https://www.mjdinteractive.com/wp-content/uploads/2018/04/digital-retail-customer-journey-uai-1348x898.jpg" width="1348" height="898" alt="" /></a></div>
+				</div>
+			</div></div>
+					</div>      </div>
+
+    </div>
+    </div>
+</div></div></div></div></div><script id="script-861048" data-row="script-861048" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-861048"));</script></div></div></div>
+<p>The post <a rel="nofollow" href="https://www.mjdinteractive.com/insights/picking-a-continuous-integration-platform-for-mobile-projects/">Picking a Continuous Integration Platform</a> appeared first on <a rel="nofollow" href="https://www.mjdinteractive.com">MJD Interactive</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.mjdinteractive.com/insights/picking-a-continuous-integration-platform-for-mobile-projects/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Book Release: watchOS by Tutorials</title>
+		<link>https://www.mjdinteractive.com/insights/book-release-watchos-by-tutorials/</link>
+		<comments>https://www.mjdinteractive.com/insights/book-release-watchos-by-tutorials/#respond</comments>
+		<pubDate>Thu, 20 Oct 2016 17:09:32 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Engineering & Emerging Tech]]></category>
+
+		<guid isPermaLink="false">https://www.mjdinteractive.com/?p=76014</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.mjdinteractive.com/insights/book-release-watchos-by-tutorials/">Book Release: watchOS by Tutorials</a> appeared first on <a rel="nofollow" href="https://www.mjdinteractive.com">MJD Interactive</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<div data-parent="true" class="vc_row limit-width row-container"><div class="row single-top-padding one-bottom-padding single-h-padding row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light font-134980"  ><div class="uncoltable"><div class="uncell"><div class="uncont no-block-padding col-custom-width" style="max-width:804px;"><div class="heading-text el-text" ><h2 class="h2" ><span></p></span><span><div class="post-meta"></span><span><h3>Book Release: watchOS by Tutorials</h3></span><span></div></span><span><p></span></h2><hr class="separator-break separator-accent" /><div><p>MJD</p>
+</div></div><div class="clear"></div><div class="uncode_text_column text-lead" ></p>
+<div class="post-intro">
+<p>At MJD Interactive we embrace new ways of interacting with technology such as smart watches. We also believe one of the best ways to learn something is by teaching it. Our very own Director of Mobile Engineering, Matthew Morey, did this by co-authoring a book about developing apps for the Apple Watch.</p>
+</div>
+<p>
+</div></div></div></div></div></div><script id="script-136841" data-row="script-136841" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-136841"));</script></div></div></div><div data-parent="true" class="vc_row row-container"><div class="row col-one-gutter double-top-padding single-bottom-padding single-h-padding limit-width row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light"  ><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div class="uncode-single-media  text-center"><div class="single-wrapper" style="max-width: 80%;"><div class="tmb tmb-light  tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+						<div class="t-inside"><div class="t-entry-visual" tabindex="0"><div class="t-entry-visual-tc"><div class="uncode-single-media-wrapper">
+									<img src="https://www.mjdinteractive.com/wp-content/uploads/2016/10/watchOS-5.jpg" width="2048" height="846" alt=""></div>
+				</div>
+			</div></div>
+					</div></div></div></div></div></div></div></div><script id="script-891037" data-row="script-891037" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-891037"));</script></div></div></div><div data-parent="true" class="vc_row limit-width row-container"><div class="row single-top-padding one-bottom-padding single-h-padding row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light font-134980"  ><div class="uncoltable"><div class="uncell"><div class="uncont no-block-padding col-custom-width" style="max-width:804px;"><div class="uncode_text_column text-lead" ><p><strong><a href="https://www.raywenderlich.com/store/watchos-by-tutorials?source=matthewmorey">watchOS by Tutorials</a></strong>, available now, teaches you everything you need to know to develop your own apps for watchOS 3, including new features such as the Dock, CloudKit, Digital Crown access and more.</p>
+<p><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script><br />
+<script type="IN/FollowCompany" data-id="368750" data-counter="right"></script></p>
+</div></div></div></div></div></div><script id="script-173715" data-row="script-173715" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-173715"));</script></div></div></div><div data-parent="true" class="vc_row row-container"><div class="row limit-width row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light"  ><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div class="divider-wrapper " >
+    <hr class="border-color-lxmt-color separator-no-padding"  />
+</div>
+</div></div></div></div></div><script id="script-205793" data-row="script-205793" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-205793"));</script></div></div></div><div data-parent="true" class="vc_row limit-width row-container"><div class="row row-parent"><div class="row-inner"><div class="pos-top pos-center align_center column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light"  ><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div class="heading-text el-text" ><h2 class="h2" ><span></p></span><span><p style="text-align: center;"><strong>Check out the entire Evolution of Retail series:</strong></p></span><span><p></span></h2></div><div class="clear"></div><div class="owl-carousel-wrapper">
+            <div class="owl-carousel-container owl-carousel-loading double-gutter carousel-inner-padding">
+      <div id="index-115545" class="owl-carousel owl-element owl-height-equal owl-dots-outside" data-fade="true" data-loop="true" data-dots="true" data-navmobile="false" data-navspeed="400" data-autoplay="false" data-stagepadding="0" data-lg="3" data-md="3" data-sm="1" data-vp-height="false">
+        <div class="tmb tmb-carousel tmb-iso-h33 tmb-light tmb-text-showed tmb-overlay-showed tmb-overlay-bottom tmb-overlay-text-left tmb-overlay-text-mobile-center tmb-text-space-reduced tmb-image-anim  grid-cat-17 tmb-id-75947 tmb-img-ratio tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+						<div class="t-inside" ><div class="t-entry-visual" tabindex="0"><div class="t-entry-visual-tc"><div class="t-entry-visual-cont"><div class="dummy" style="padding-top: 66.7%;"></div><a tabindex="-1" href="https://www.mjdinteractive.com/insights/what-was-big-at-the-nrf-big-show/" class="pushed" target="_self" data-lb-index="0"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-accent-bg" style="opacity: 0.5;"></div></div>
+									<div class="t-overlay-wrap">
+										<div class="t-overlay-inner">
+											<div class="t-overlay-content">
+												<div class="t-overlay-text half-block-padding"><div class="t-entry"><h3 class="t-entry-title h6">What Was Big at the NRF Big Show</h3><hr class="separator-reduced" /><p class="t-entry-comments entry-small"><span class="extras"><span class="uncode-dot-irecommendthis"><span class="extras-wrap"><i class="fa fa-heart3"></i><span><span class="likes-counter">0</span> Like</span></span></span><span class="extras-wrap"><i class="fa fa-speech-bubble"></i><span>0 Comments</span></span><span class="extras-wrap"><i class="fa fa-watch"></i><span>8 Minutes</span></span></span></p></div></div></div></div></div><img src="https://www.mjdinteractive.com/wp-content/uploads/2018/05/NRF-mainhall-uai-750x500.jpg" width="750" height="500" alt="" /></a></div>
+				</div>
+			</div></div>
+					</div><div class="tmb tmb-carousel tmb-iso-h33 tmb-light tmb-text-showed tmb-overlay-showed tmb-overlay-bottom tmb-overlay-text-left tmb-overlay-text-mobile-center tmb-text-space-reduced tmb-image-anim  grid-cat-17 tmb-id-75686 tmb-img-ratio tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+						<div class="t-inside" ><div class="t-entry-visual" tabindex="0"><div class="t-entry-visual-tc"><div class="t-entry-visual-cont"><div class="dummy" style="padding-top: 66.7%;"></div><a tabindex="-1" href="https://www.mjdinteractive.com/insights/evolution-retail-pt-4-customer-expectations/" class="pushed" target="_self" data-lb-index="1"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-accent-bg" style="opacity: 0.5;"></div></div>
+									<div class="t-overlay-wrap">
+										<div class="t-overlay-inner">
+											<div class="t-overlay-content">
+												<div class="t-overlay-text half-block-padding"><div class="t-entry"><h3 class="t-entry-title h6">The Evolution of Retail, Pt. 4: Customer Expectations</h3><hr class="separator-reduced" /><p class="t-entry-comments entry-small"><span class="extras"><span class="uncode-dot-irecommendthis"><span class="extras-wrap"><i class="fa fa-heart3"></i><span><span class="likes-counter">0</span> Like</span></span></span><span class="extras-wrap"><i class="fa fa-speech-bubble"></i><span>0 Comments</span></span><span class="extras-wrap"><i class="fa fa-watch"></i><span>7 Minutes</span></span></span></p></div></div></div></div></div><img src="https://www.mjdinteractive.com/wp-content/uploads/2018/04/shutterstock_481755250-uai-2013x1342.jpg" width="2013" height="1342" alt="" /></a></div>
+				</div>
+			</div></div>
+					</div><div class="tmb tmb-carousel tmb-iso-h33 tmb-light tmb-text-showed tmb-overlay-showed tmb-overlay-bottom tmb-overlay-text-left tmb-overlay-text-mobile-center tmb-text-space-reduced tmb-image-anim  grid-cat-17 tmb-id-75693 tmb-img-ratio tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+						<div class="t-inside" ><div class="t-entry-visual" tabindex="0"><div class="t-entry-visual-tc"><div class="t-entry-visual-cont"><div class="dummy" style="padding-top: 66.6%;"></div><a tabindex="-1" href="https://www.mjdinteractive.com/insights/evolution-retail-pt-3-enhancing-customer-journey/" class="pushed" target="_self" data-lb-index="2"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-accent-bg" style="opacity: 0.5;"></div></div>
+									<div class="t-overlay-wrap">
+										<div class="t-overlay-inner">
+											<div class="t-overlay-content">
+												<div class="t-overlay-text half-block-padding"><div class="t-entry"><h3 class="t-entry-title h6">The Evolution of Retail, Pt. 3: Enhancing the Customer Journey</h3><hr class="separator-reduced" /><p class="t-entry-comments entry-small"><span class="extras"><span class="uncode-dot-irecommendthis"><span class="extras-wrap"><i class="fa fa-heart3"></i><span><span class="likes-counter">0</span> Like</span></span></span><span class="extras-wrap"><i class="fa fa-speech-bubble"></i><span>0 Comments</span></span><span class="extras-wrap"><i class="fa fa-watch"></i><span>13 Minutes</span></span></span></p></div></div></div></div></div><img src="https://www.mjdinteractive.com/wp-content/uploads/2018/04/digital-retail-customer-journey-uai-1348x898.jpg" width="1348" height="898" alt="" /></a></div>
+				</div>
+			</div></div>
+					</div>      </div>
+
+    </div>
+    </div>
+</div></div></div></div></div><script id="script-214493" data-row="script-214493" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-214493"));</script></div></div></div>
+<p>The post <a rel="nofollow" href="https://www.mjdinteractive.com/insights/book-release-watchos-by-tutorials/">Book Release: watchOS by Tutorials</a> appeared first on <a rel="nofollow" href="https://www.mjdinteractive.com">MJD Interactive</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.mjdinteractive.com/insights/book-release-watchos-by-tutorials/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Designer &#038; Engineer: A Power Couple</title>
+		<link>https://www.mjdinteractive.com/insights/designer-engineer-a-power-couple/</link>
+		<comments>https://www.mjdinteractive.com/insights/designer-engineer-a-power-couple/#respond</comments>
+		<pubDate>Mon, 07 Nov 2016 14:41:17 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Design & UX]]></category>
+		<category><![CDATA[Engineering & Emerging Tech]]></category>
+
+		<guid isPermaLink="false">https://www.mjdinteractive.com/?p=76003</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.mjdinteractive.com/insights/designer-engineer-a-power-couple/">Designer &#038; Engineer: A Power Couple</a> appeared first on <a rel="nofollow" href="https://www.mjdinteractive.com">MJD Interactive</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<div data-parent="true" class="vc_row limit-width row-container"><div class="row single-top-padding one-bottom-padding single-h-padding row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light font-134980"  ><div class="uncoltable"><div class="uncell"><div class="uncont no-block-padding col-custom-width" style="max-width:804px;"><div class="heading-text el-text" ><h2 class="h2" ><span></p></span><span><div class="post-meta"></span><span><h2>Designer &amp; Engineer: A Power Couple</h2></span><span></div></span><span><p></span></h2><hr class="separator-break separator-accent" /><div><p>Lindsey Harris</p>
+</div></div><div class="clear"></div><div class="uncode_text_column text-lead" ></p>
+<div class="post-intro">
+<div class="post-intro">
+<p>The landscape has changed; technology moves extremely fast. With powerful tools now are at our fingertips, a small team is capable of more than ever before. There are certain attributes needed to make this powerful duo perform. There should be talent, creativity, passion and foresight, and then theoretically – magic happens. But the designer/engineer relationship can be a struggle. One filled with tension, ego, and misunderstanding.</p>
+<p>A designer uses creativity to invent something that doesn’t yet exist, bringing something beautiful into the world. An engineer does exactly the same thing, but instead of using a visual, right-brained vocabulary, they use the left-brained language of math and logic. How do you bridge this gap? How do you walk across that chunk of fatty tissue between the two lobes?</p>
+</div>
+</div>
+<p>
+</div></div></div></div></div></div><script id="script-253733" data-row="script-253733" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-253733"));</script></div></div></div><div data-parent="true" class="vc_row limit-width row-container"><div class="row single-top-padding one-bottom-padding single-h-padding row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light font-134980"  ><div class="uncoltable"><div class="uncell"><div class="uncont no-block-padding col-custom-width" style="max-width:804px;"><div class="uncode_text_column text-lead" ></p>
+<div class="post-intro">
+<div class="post-intro">
+<p>As a creative, I’ve worked closely with engineers for years. Sometimes we were creating original products like some of the first iPhone Apps. Sometimes I was a hired gun designer on an engineering team. Now, I lead creative teams including internal designers, vendors, and engineers. Each of those scenarios has a method to the madness, but below are some overall tips I’ve learned to make the designer/engineer relationship as dynamic (design term) and robust (engineering term) as it can be.</p>
+</div>
+</div>
+<p>
+</div></div></div></div></div></div><script id="script-858216" data-row="script-858216" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-858216"));</script></div></div></div><div data-parent="true" class="vc_row limit-width row-container"><div class="row single-top-padding one-bottom-padding single-h-padding row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light font-134980"  ><div class="uncoltable"><div class="uncell"><div class="uncont no-block-padding col-custom-width" style="max-width:804px;"><div class="heading-text el-text" ><h2 class="h2" ><span></p></span><span><div class="post-meta"></span><span><h3>Foster Education</h3></span><span></div></span><span><p></span></h2></div><div class="clear"></div><div class="uncode_text_column text-lead" ></p>
+<div class="post-intro">
+<div class="post-intro">
+<p><span style="font-weight: 400;">Talented designers aren’t trying to make something look pretty, cool or custom for the sake of it. </span><span style="font-weight: 400;">Just like good engineers aren’t saying something can’t be done because it never has been done. </span><span style="font-weight: 400;">One does not exist to make the other’s work harder.</span></p>
+<p><span style="font-weight: 400;">You can gain respect and advance collaboration by living in each others world a bit, or a lot. By treating your team member like a client you can begin to understand his/her challenges and approach. A talented designer that understands engineering principles, the way he/she might approach a problem, and the reasons why, will profoundly benefit the team. Understanding engineering resourcing issues, how long a development task should take, or what work is even possible is incredibly helpful in a creative environment. The same goes for an engineer that understands design principles.</span></p>
+<p><span style="font-weight: 400;">You don’t always have control over the team that’s assembled. In some cases, you might need to educate people on why the work you do is imperative, as well as the reasons for the decisions you make. Put in the time. This should be easy. There are strong reasoning, research, and design principles that go into any good designer’s work, while strong logic, analysis, architecture, and best practices go into any good engineer’s.</span></p>
+<p><span style="font-weight: 400;">Education also happens organically when someone is being challenged. The work is better when the group is smarter. It’s important to ask constructive questions, to ask “why”. Listen. Teach. Question. Share insights and processes to instill trust between each other and elevate the work.</span></p>
+</div>
+</div>
+<p>
+</div></div></div></div></div></div><script id="script-132809" data-row="script-132809" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-132809"));</script></div></div></div><div data-parent="true" class="vc_row limit-width row-container"><div class="row single-top-padding one-bottom-padding single-h-padding row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light font-134980"  ><div class="uncoltable"><div class="uncell"><div class="uncont no-block-padding col-custom-width" style="max-width:804px;"><div class="heading-text el-text" ><h2 class="h2" ><span></p></span><span><div class="post-meta"></span><span><h3>Are you speaking the same language?</h3></span><span></div></span><span><p></span></h2></div><div class="clear"></div><div class="uncode_text_column text-lead" ></p>
+<div class="post-intro">
+<div class="post-intro">
+<p><span style="font-weight: 400;">Designers and engineers think differently. It sounds obvious, but it’s important to remember this while trying to get your ideas across. How does their thinking differ?</span></p>
+<h4><b>A designer’s questions on user interactions</b></h4>
+<p><span style="font-weight: 400;">How do we get the user to engage and how do we tap into their emotions?</span></p>
+<h4><b>An engineer’s questions on user interactions</b></h4>
+<p><span style="font-weight: 400;">How does the app react to human input and how does it communicate back?</span></p>
+<p>Designers and engineers each have a distinct focus. In this example, one focuses on human engagement, one focuses on functionality. Understanding where the focus lies is a helpful jumping off point. From there, talk less about deliverables and more about project goals. It’s easy to get into the weeds if you’re trying to take on someone else’s focus. A designer may not totally understand the engineer&#8217;s details of a project’s logic, and that’s okay. Because the guiding light should be the project’s goals.</p>
+<p><span style="font-weight: 400;">There’s a tangible mindset shift when the team thinks first in goals like &#8216;encourage more engagement through freedom of expression&#8217; vs. a tactic like ‘build/design a home screen’. Then individually, how can everyone deliver on that?</span></p>
+</div>
+</div>
+<p>
+</div></div></div></div></div></div><script id="script-110659" data-row="script-110659" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-110659"));</script></div></div></div><div data-parent="true" class="vc_row limit-width row-container"><div class="row single-top-padding one-bottom-padding single-h-padding row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light font-134980"  ><div class="uncoltable"><div class="uncell"><div class="uncont no-block-padding col-custom-width" style="max-width:804px;"><div class="heading-text el-text" ><h2 class="h2" ><span></p></span><span><div class="post-meta"></span><span><h3>A Symbiotic Relationship</h3></span><span></div></span><span><p></span></h2></div><div class="clear"></div><div class="uncode_text_column text-lead" ></p>
+<div class="post-intro">
+<div class="post-intro">
+<p><span style="font-weight: 400;">Designers make engineers look good. Engineers make designers look good. In our industry, substance is not more important than how something looks. Both are important and need to be treated that way. Design dictates how a user feels while using a product. This feeling, whether subconscious or not, helps a user decide whether it’s your product they use or someone else’s.</span></p>
+<p><span style="font-weight: 400;">I was talking with an engineer once about his frustration with not having a designer on his team to make the super-awesome product he was working on, look indeed, super-awesome. It’s true, people are visual. In order to believe and trust in a product it has to look and feel as good as it works. Getting people to rally around a product takes powerful functionality, meaningful features, </span><i><span style="font-weight: 400;">and</span></i><span style="font-weight: 400;"> design that speaks to them.</span></p>
+<p><span style="font-weight: 400;">Take, for instance, the Apple App Store when it opened in 2008. The first apps to hit the store were built by forward thinking engineers. Because some of these engineers were independent or a small team, design was left on the curb. They ended up making fantastic apps that looked less than fantastic. People didn’t know what to expect in the beginning, but they quickly became accustomed to the superior design aesthetic that the iPhone epitomizes. This opened up the door for someone to do the exact same fantastic app, but one that was well designed and won the hearts of the competition’s users. A prime example is the array of weather and news apps that have the same essential functionality but riff over and over in design and UX.</span></p>
+</div>
+</div>
+<p>
+</div></div></div></div></div></div><script id="script-760790" data-row="script-760790" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-760790"));</script></div></div></div><div data-parent="true" class="vc_row limit-width row-container"><div class="row single-top-padding one-bottom-padding single-h-padding row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light font-134980"  ><div class="uncoltable"><div class="uncell"><div class="uncont no-block-padding col-custom-width" style="max-width:804px;"><div class="heading-text el-text" ><h2 class="h2" ><span></p></span><span><div class="post-meta"></span><span><h3>Forget about the &#8220;hand-off&#8221;</h3></span><span></div></span><span><p></span></h2></div><div class="clear"></div><div class="uncode_text_column text-lead" ></p>
+<div class="post-intro">
+<div class="post-intro">
+<p><span style="font-weight: 400;">Stop thinking in terms of a design ‘hand-off’ that happens once final design is approved and engineering starts. Design and engineering start at the same time; from strategy through the build. It’s helpful to create space for designers to think in code and engineers to think in design. Engineers can moodboard and designers can prototype. The work will be better for it.</span></p>
+<p><span style="font-weight: 400;">Also forget about ‘final design’. We need overarching guidelines to hit deadlines, but we need to allow room for flexibility and change. You can’t always see the forest for the trees. Don’t allow early decisions to bind a project up. Try hard to kill the mindset that what’s being built today will never change. Real-time user testing will inform and cause needed iteration.</span></p>
+</div>
+</div>
+<p>
+</div></div></div></div></div></div><script id="script-199700" data-row="script-199700" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-199700"));</script></div></div></div><div data-parent="true" class="vc_row limit-width row-container"><div class="row single-top-padding one-bottom-padding single-h-padding row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light font-134980"  ><div class="uncoltable"><div class="uncell"><div class="uncont no-block-padding col-custom-width" style="max-width:804px;"><div class="heading-text el-text" ><h2 class="h2" ><span></p></span><span><div class="post-meta"></span><span><h3>Arm the engineers</h3></span><span></div></span><span><p></span></h2></div><div class="clear"></div><div class="uncode_text_column text-lead" ></p>
+<div class="post-intro">
+<div class="post-intro">
+<p><span style="font-weight: 400;">Style guides; interaction guides; vector assets; animation prototypes: These items take up a lot of a designers’ time to produce.</span><span style="font-weight: 400;"> But they’re worth it. </span><span style="font-weight: 400;"> </span></p>
+<p><span style="font-weight: 400;">The more designers do to inform an engineer, the better the outcome will be. Yes, the idea is to work closely during the whole process, but so much of that time is verbal communication through scrums, brainstorms, etc. When the details and design decisions are only explained verbally, it leaves room for a large gap in understanding. This could lead to let down and frustration on both sides. Reference is a powerful tool to keep the common vision clear.</span></p>
+<p><span style="font-weight: 400;">Lay this groundwork, and with the right people, you will see the work and individuals advance. The right people is key. This kind of collaboration is not for everyone. Not everyone has the ability or desire to venture outside their cozy silo. At MJD we cultivate an environment of cross-pollination and seek out people who thrive on this kind of collaboration.</span><span style="font-weight: 400;"> These types of people tend to gravitate toward each other.</span><br />
+<span style="font-weight: 400;">Lay this groundwork, and with the right people, you will see the work and individuals advance. The right people is key. This kind of collaboration is not for everyone. Not everyone has the ability or desire to venture outside their cozy silo. At MJD we cultivate an environment of cross-pollination and seek out people who thrive on this kind of collaboration.</span><span style="font-weight: 400;"> These types of people tend to gravitate toward each other.</span></p>
+<p><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script><br />
+<script type="IN/FollowCompany" data-id="368750" data-counter="right"></script></p>
+</div>
+</div>
+<p>
+</div></div></div></div></div></div><script id="script-121794" data-row="script-121794" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-121794"));</script></div></div></div><div data-parent="true" class="vc_row row-container"><div class="row limit-width row-parent"><div class="row-inner"><div class="pos-top pos-center align_left column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light"  ><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div class="divider-wrapper " >
+    <hr class="border-color-lxmt-color separator-no-padding"  />
+</div>
+</div></div></div></div></div><script id="script-163989" data-row="script-163989" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-163989"));</script></div></div></div><div data-parent="true" class="vc_row limit-width row-container"><div class="row row-parent"><div class="row-inner"><div class="pos-top pos-center align_center column_parent col-lg-12 single-internal-gutter"><div class="uncol style-light"  ><div class="uncoltable"><div class="uncell no-block-padding"><div class="uncont"><div class="heading-text el-text" ><h2 class="h2" ><span></p></span><span><p style="text-align: center;"><strong>Check out the entire Evolution of Retail series:</strong></p></span><span><p></span></h2></div><div class="clear"></div><div class="owl-carousel-wrapper">
+            <div class="owl-carousel-container owl-carousel-loading double-gutter carousel-inner-padding">
+      <div id="index-115545" class="owl-carousel owl-element owl-height-equal owl-dots-outside" data-fade="true" data-loop="true" data-dots="true" data-navmobile="false" data-navspeed="400" data-autoplay="false" data-stagepadding="0" data-lg="3" data-md="3" data-sm="1" data-vp-height="false">
+        <div class="tmb tmb-carousel tmb-iso-h33 tmb-light tmb-text-showed tmb-overlay-showed tmb-overlay-bottom tmb-overlay-text-left tmb-overlay-text-mobile-center tmb-text-space-reduced tmb-image-anim  grid-cat-17 tmb-id-75947 tmb-img-ratio tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+						<div class="t-inside" ><div class="t-entry-visual" tabindex="0"><div class="t-entry-visual-tc"><div class="t-entry-visual-cont"><div class="dummy" style="padding-top: 66.7%;"></div><a tabindex="-1" href="https://www.mjdinteractive.com/insights/what-was-big-at-the-nrf-big-show/" class="pushed" target="_self" data-lb-index="0"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-accent-bg" style="opacity: 0.5;"></div></div>
+									<div class="t-overlay-wrap">
+										<div class="t-overlay-inner">
+											<div class="t-overlay-content">
+												<div class="t-overlay-text half-block-padding"><div class="t-entry"><h3 class="t-entry-title h6">What Was Big at the NRF Big Show</h3><hr class="separator-reduced" /><p class="t-entry-comments entry-small"><span class="extras"><span class="uncode-dot-irecommendthis"><span class="extras-wrap"><i class="fa fa-heart3"></i><span><span class="likes-counter">0</span> Like</span></span></span><span class="extras-wrap"><i class="fa fa-speech-bubble"></i><span>0 Comments</span></span><span class="extras-wrap"><i class="fa fa-watch"></i><span>8 Minutes</span></span></span></p></div></div></div></div></div><img src="https://www.mjdinteractive.com/wp-content/uploads/2018/05/NRF-mainhall-uai-750x500.jpg" width="750" height="500" alt="" /></a></div>
+				</div>
+			</div></div>
+					</div><div class="tmb tmb-carousel tmb-iso-h33 tmb-light tmb-text-showed tmb-overlay-showed tmb-overlay-bottom tmb-overlay-text-left tmb-overlay-text-mobile-center tmb-text-space-reduced tmb-image-anim  grid-cat-17 tmb-id-75686 tmb-img-ratio tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+						<div class="t-inside" ><div class="t-entry-visual" tabindex="0"><div class="t-entry-visual-tc"><div class="t-entry-visual-cont"><div class="dummy" style="padding-top: 66.7%;"></div><a tabindex="-1" href="https://www.mjdinteractive.com/insights/evolution-retail-pt-4-customer-expectations/" class="pushed" target="_self" data-lb-index="1"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-accent-bg" style="opacity: 0.5;"></div></div>
+									<div class="t-overlay-wrap">
+										<div class="t-overlay-inner">
+											<div class="t-overlay-content">
+												<div class="t-overlay-text half-block-padding"><div class="t-entry"><h3 class="t-entry-title h6">The Evolution of Retail, Pt. 4: Customer Expectations</h3><hr class="separator-reduced" /><p class="t-entry-comments entry-small"><span class="extras"><span class="uncode-dot-irecommendthis"><span class="extras-wrap"><i class="fa fa-heart3"></i><span><span class="likes-counter">0</span> Like</span></span></span><span class="extras-wrap"><i class="fa fa-speech-bubble"></i><span>0 Comments</span></span><span class="extras-wrap"><i class="fa fa-watch"></i><span>7 Minutes</span></span></span></p></div></div></div></div></div><img src="https://www.mjdinteractive.com/wp-content/uploads/2018/04/shutterstock_481755250-uai-2013x1342.jpg" width="2013" height="1342" alt="" /></a></div>
+				</div>
+			</div></div>
+					</div><div class="tmb tmb-carousel tmb-iso-h33 tmb-light tmb-text-showed tmb-overlay-showed tmb-overlay-bottom tmb-overlay-text-left tmb-overlay-text-mobile-center tmb-text-space-reduced tmb-image-anim  grid-cat-17 tmb-id-75693 tmb-img-ratio tmb-media-first tmb-media-last tmb-content-overlay tmb-no-bg">
+						<div class="t-inside" ><div class="t-entry-visual" tabindex="0"><div class="t-entry-visual-tc"><div class="t-entry-visual-cont"><div class="dummy" style="padding-top: 66.6%;"></div><a tabindex="-1" href="https://www.mjdinteractive.com/insights/evolution-retail-pt-3-enhancing-customer-journey/" class="pushed" target="_self" data-lb-index="2"><div class="t-entry-visual-overlay"><div class="t-entry-visual-overlay-in style-accent-bg" style="opacity: 0.5;"></div></div>
+									<div class="t-overlay-wrap">
+										<div class="t-overlay-inner">
+											<div class="t-overlay-content">
+												<div class="t-overlay-text half-block-padding"><div class="t-entry"><h3 class="t-entry-title h6">The Evolution of Retail, Pt. 3: Enhancing the Customer Journey</h3><hr class="separator-reduced" /><p class="t-entry-comments entry-small"><span class="extras"><span class="uncode-dot-irecommendthis"><span class="extras-wrap"><i class="fa fa-heart3"></i><span><span class="likes-counter">0</span> Like</span></span></span><span class="extras-wrap"><i class="fa fa-speech-bubble"></i><span>0 Comments</span></span><span class="extras-wrap"><i class="fa fa-watch"></i><span>13 Minutes</span></span></span></p></div></div></div></div></div><img src="https://www.mjdinteractive.com/wp-content/uploads/2018/04/digital-retail-customer-journey-uai-1348x898.jpg" width="1348" height="898" alt="" /></a></div>
+				</div>
+			</div></div>
+					</div>      </div>
+
+    </div>
+    </div>
+</div></div></div></div></div><script id="script-150219" data-row="script-150219" type="text/javascript">if ( typeof UNCODE !== "undefined" ) UNCODE.initRow(document.getElementById("script-150219"));</script></div></div></div>
+<p>The post <a rel="nofollow" href="https://www.mjdinteractive.com/insights/designer-engineer-a-power-couple/">Designer &#038; Engineer: A Power Couple</a> appeared first on <a rel="nofollow" href="https://www.mjdinteractive.com">MJD Interactive</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.mjdinteractive.com/insights/designer-engineer-a-power-couple/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
